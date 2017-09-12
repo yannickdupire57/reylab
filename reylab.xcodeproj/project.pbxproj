@@ -54,14 +54,46 @@
 		AC25B6F61F66AF5A0000E6F6 /* reylab */ = {
 			isa = PBXGroup;
 			children = (
-				AC25B6F71F66AF5A0000E6F6 /* AppDelegate.swift */,
-				AC25B6F91F66AF5A0000E6F6 /* ViewController.swift */,
-				AC25B6FB1F66AF5A0000E6F6 /* Main.storyboard */,
-				AC25B6FE1F66AF5A0000E6F6 /* Assets.xcassets */,
-				AC25B7001F66AF5A0000E6F6 /* LaunchScreen.storyboard */,
-				AC25B7031F66AF5A0000E6F6 /* Info.plist */,
+				AC25B70C1F66AF8B0000E6F6 /* modele */,
+				AC25B70B1F66AF820000E6F6 /* views */,
+				AC25B7091F66AF690000E6F6 /* Controller */,
+				AC25B70A1F66AF7A0000E6F6 /* other files */,
 			);
 			path = reylab;
+			sourceTree = "<group>";
+		};
+		AC25B7091F66AF690000E6F6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				AC25B6F91F66AF5A0000E6F6 /* ViewController.swift */,
+				AC25B6FB1F66AF5A0000E6F6 /* Main.storyboard */,
+			);
+			name = Controller;
+			sourceTree = "<group>";
+		};
+		AC25B70A1F66AF7A0000E6F6 /* other files */ = {
+			isa = PBXGroup;
+			children = (
+				AC25B6F71F66AF5A0000E6F6 /* AppDelegate.swift */,
+				AC25B6FE1F66AF5A0000E6F6 /* Assets.xcassets */,
+				AC25B7031F66AF5A0000E6F6 /* Info.plist */,
+			);
+			name = "other files";
+			sourceTree = "<group>";
+		};
+		AC25B70B1F66AF820000E6F6 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				AC25B7001F66AF5A0000E6F6 /* LaunchScreen.storyboard */,
+			);
+			name = views;
+			sourceTree = "<group>";
+		};
+		AC25B70C1F66AF8B0000E6F6 /* modele */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = modele;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +299,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dupire.yannick.reylab;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -279,6 +312,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dupire.yannick.reylab;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
@@ -301,6 +335,7 @@
 				AC25B7081F66AF5B0000E6F6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
