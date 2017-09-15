@@ -1,26 +1,141 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="711-eu-Uwn">
+    <device id="ipad10_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Container View Controller-->
+        <scene sceneID="f1r-mG-yPB">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="711-eu-Uwn" customClass="ContainerViewController" customModule="reylab" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="2rL-dn-nNb"/>
+                        <viewControllerLayoutGuide type="bottom" id="PGh-vd-U12"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <view key="view" contentMode="scaleToFill" id="frn-ap-kdE">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="C5v-JF-hdp">
+                                <rect key="frame" x="-20" y="0.0" width="874" height="1112"/>
+                                <connections>
+                                    <segue destination="QmY-7o-sW2" kind="embed" id="uEj-2M-2IF"/>
+                                </connections>
+                            </containerView>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="hyD-Yg-9hW">
+                                <rect key="frame" x="398" y="1067" width="39" height="37"/>
+                            </pageControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="alT-TB-Ted">
+                                <rect key="frame" x="714" y="1051" width="80" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Suivant">
+                                    <color key="titleShadowColor" red="0.80392158030000005" green="0.80392158030000005" blue="0.80392158030000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="pressNextButton:" destination="711-eu-Uwn" eventType="touchUpInside" id="6hC-vN-HTN"/>
+                                </connections>
+                            </button>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I1i-UK-Ed9">
+                                <rect key="frame" x="20" y="1051" width="110" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Précédent"/>
+                                <connections>
+                                    <action selector="pressPreviousButton:" destination="711-eu-Uwn" eventType="touchUpInside" id="vzS-sO-Ser"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PGh-vd-U12" firstAttribute="top" secondItem="alT-TB-Ted" secondAttribute="bottom" constant="20" id="1ZV-PO-O11"/>
+                            <constraint firstItem="C5v-JF-hdp" firstAttribute="top" secondItem="frn-ap-kdE" secondAttribute="top" id="AZd-hQ-7iw"/>
+                            <constraint firstItem="C5v-JF-hdp" firstAttribute="leading" secondItem="frn-ap-kdE" secondAttribute="leading" constant="-20" id="MBn-dP-ZXm"/>
+                            <constraint firstItem="PGh-vd-U12" firstAttribute="top" secondItem="hyD-Yg-9hW" secondAttribute="bottom" constant="8" id="PPi-us-ast"/>
+                            <constraint firstAttribute="trailing" secondItem="C5v-JF-hdp" secondAttribute="trailing" constant="-20" id="XhT-Du-ojU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="alT-TB-Ted" secondAttribute="trailing" constant="20" id="dbX-RR-V89"/>
+                            <constraint firstItem="PGh-vd-U12" firstAttribute="top" secondItem="C5v-JF-hdp" secondAttribute="bottom" id="i0E-rd-M4a"/>
+                            <constraint firstItem="I1i-UK-Ed9" firstAttribute="leading" secondItem="frn-ap-kdE" secondAttribute="leading" constant="20" id="vmm-fz-Uxv"/>
+                            <constraint firstItem="hyD-Yg-9hW" firstAttribute="centerX" secondItem="frn-ap-kdE" secondAttribute="centerX" id="ygV-SK-Cot"/>
+                            <constraint firstItem="PGh-vd-U12" firstAttribute="top" secondItem="I1i-UK-Ed9" secondAttribute="bottom" constant="20" id="zhC-Kr-yNA"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="container" destination="C5v-JF-hdp" id="9Se-xz-n08"/>
+                        <outlet property="nextButton" destination="alT-TB-Ted" id="4ny-nL-G8q"/>
+                        <outlet property="pageControl" destination="hyD-Yg-9hW" id="Plf-AH-iyw"/>
+                        <outlet property="previousButton" destination="I1i-UK-Ed9" id="czZ-aG-F9D"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hbu-Tb-oI9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-254.67625899280577" y="-1125"/>
+        </scene>
+        <!--Page View Controller Principal-->
+        <scene sceneID="uXu-7p-t2P">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="QmY-7o-sW2" customClass="PageViewControllerPrincipal" customModule="reylab" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ePH-1E-nx6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-253" y="-421"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Cfr-CL-p5y">
+            <objects>
+                <viewController storyboardIdentifier="page 1" id="RQZ-ZO-4HY" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="R1O-wy-rzc"/>
+                        <viewControllerLayoutGuide type="bottom" id="N1s-w2-z5S"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1bg-5A-mQJ">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NJ2-pa-eAm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-1450" y="851"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="DaN-Zq-g1z">
+            <objects>
+                <viewController storyboardIdentifier="page 2" id="MZ3-tt-kTc" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="wBx-2d-RPi"/>
+                        <viewControllerLayoutGuide type="bottom" id="Nx0-AZ-F95"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="GEP-O1-Eiw">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tFW-kT-HQn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-231" y="840"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="8KA-an-oCj">
+            <objects>
+                <viewController storyboardIdentifier="page 3" id="D8e-c9-yYo" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="YA0-cP-1sg"/>
+                        <viewControllerLayoutGuide type="bottom" id="KNp-Mn-JNO"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Rm4-UP-8gL">
+                        <rect key="frame" x="0.0" y="0.0" width="834" height="1112"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cQg-Er-c1R" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="875" y="839"/>
         </scene>
     </scenes>
 </document>
