@@ -83,10 +83,10 @@
             </objects>
             <point key="canvasLocation" x="-253" y="-421"/>
         </scene>
-        <!--View Controller-->
+        <!--First Page View Controller-->
         <scene sceneID="Cfr-CL-p5y">
             <objects>
-                <viewController storyboardIdentifier="page 1" id="RQZ-ZO-4HY" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="page 1" id="RQZ-ZO-4HY" customClass="FirstPageViewController" customModule="reylab" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="R1O-wy-rzc"/>
                         <viewControllerLayoutGuide type="bottom" id="N1s-w2-z5S"/>

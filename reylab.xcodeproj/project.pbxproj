@@ -13,21 +13,22 @@
 		AC25B7021F66AF5A0000E6F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AC25B7001F66AF5A0000E6F6 /* LaunchScreen.storyboard */; };
 		AC28CAE51F6AD3DB00ACAE92 /* PageViewControllerPrincipal.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC28CAE41F6AD3DB00ACAE92 /* PageViewControllerPrincipal.swift */; };
 		AC28CAE71F6BB35F00ACAE92 /* ContainerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC28CAE61F6BB35F00ACAE92 /* ContainerViewController.swift */; };
-		ACD207981F67E20B00986046 /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD207961F67E20B00986046 /* Realm.framework */; };
-		ACD207991F67E20B00986046 /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ACD207961F67E20B00986046 /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		ACD2079A1F67E20B00986046 /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ACD207971F67E20B00986046 /* RealmSwift.framework */; };
-		ACD2079B1F67E20B00986046 /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = ACD207971F67E20B00986046 /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AC36A5D11F6FB390008B9A0B /* FirstPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC36A5D01F6FB390008B9A0B /* FirstPageViewController.swift */; };
+		AC8C99001F74F734002C45FE /* RealmSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC8C98FE1F74F732002C45FE /* RealmSwift.framework */; };
+		AC8C99011F74F734002C45FE /* RealmSwift.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC8C98FE1F74F732002C45FE /* RealmSwift.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		AC8C99021F74F734002C45FE /* Realm.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AC8C98FF1F74F734002C45FE /* Realm.framework */; };
+		AC8C99031F74F734002C45FE /* Realm.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = AC8C98FF1F74F734002C45FE /* Realm.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		ACD2079C1F67E20B00986046 /* Embed Frameworks */ = {
+		AC8C98FD1F74F64C002C45FE /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				ACD2079B1F67E20B00986046 /* RealmSwift.framework in Embed Frameworks */,
-				ACD207991F67E20B00986046 /* Realm.framework in Embed Frameworks */,
+				AC8C99031F74F734002C45FE /* Realm.framework in Embed Frameworks */,
+				AC8C99011F74F734002C45FE /* RealmSwift.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -43,8 +44,9 @@
 		AC25B7031F66AF5A0000E6F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AC28CAE41F6AD3DB00ACAE92 /* PageViewControllerPrincipal.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PageViewControllerPrincipal.swift; sourceTree = "<group>"; };
 		AC28CAE61F6BB35F00ACAE92 /* ContainerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContainerViewController.swift; sourceTree = "<group>"; };
-		ACD207961F67E20B00986046 /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
-		ACD207971F67E20B00986046 /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		AC36A5D01F6FB390008B9A0B /* FirstPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = FirstPageViewController.swift; path = ../FirstPageViewController.swift; sourceTree = "<group>"; };
+		AC8C98FE1F74F732002C45FE /* RealmSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = RealmSwift.framework; sourceTree = "<group>"; };
+		AC8C98FF1F74F734002C45FE /* Realm.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Realm.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,8 +54,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ACD2079A1F67E20B00986046 /* RealmSwift.framework in Frameworks */,
-				ACD207981F67E20B00986046 /* Realm.framework in Frameworks */,
+				AC8C99021F74F734002C45FE /* Realm.framework in Frameworks */,
+				AC8C99001F74F734002C45FE /* RealmSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,8 +65,8 @@
 		AC25B6EB1F66AF5A0000E6F6 = {
 			isa = PBXGroup;
 			children = (
-				ACD207961F67E20B00986046 /* Realm.framework */,
-				ACD207971F67E20B00986046 /* RealmSwift.framework */,
+				AC8C98FF1F74F734002C45FE /* Realm.framework */,
+				AC8C98FE1F74F732002C45FE /* RealmSwift.framework */,
 				AC25B6F61F66AF5A0000E6F6 /* reylab */,
 				AC25B6F51F66AF5A0000E6F6 /* Products */,
 			);
@@ -112,6 +114,7 @@
 		AC25B70B1F66AF820000E6F6 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				AC36A5D01F6FB390008B9A0B /* FirstPageViewController.swift */,
 				AC25B7001F66AF5A0000E6F6 /* LaunchScreen.storyboard */,
 			);
 			name = views;
@@ -143,7 +146,7 @@
 				AC25B6F11F66AF5A0000E6F6 /* Frameworks */,
 				AC25B6F21F66AF5A0000E6F6 /* Resources */,
 				ACD207951F67E0F900986046 /* ShellScript */,
-				ACD2079C1F67E20B00986046 /* Embed Frameworks */,
+				AC8C98FD1F74F64C002C45FE /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -161,12 +164,13 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Yannick Dupire";
 				TargetAttributes = {
 					AC25B6F31F66AF5A0000E6F6 = {
 						CreatedOnToolsVersion = 8.3.3;
-						ProvisioningStyle = Automatic;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Manual;
 					};
 				};
 			};
@@ -224,6 +228,7 @@
 			files = (
 				AC28CAE51F6AD3DB00ACAE92 /* PageViewControllerPrincipal.swift in Sources */,
 				AC28CAE71F6BB35F00ACAE92 /* ContainerViewController.swift in Sources */,
+				AC36A5D11F6FB390008B9A0B /* FirstPageViewController.swift in Sources */,
 				AC25B6F81F66AF5A0000E6F6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,7 +265,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -268,7 +275,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -311,7 +322,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -319,7 +332,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -349,6 +366,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -357,7 +376,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dupire.yannick.reylab;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
@@ -366,6 +387,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -374,7 +397,9 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.dupire.yannick.reylab;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
